@@ -8,24 +8,31 @@ using namespace std;
 class Car{
     private:
         string name;
+        string model;
         double price;
-        string color;
+        int max_speed;
     public:
-        void set_name(string name){
-            this->name = name;
+        Car(string name, string model, int max_speed, double price){
+            this -> name = name;
+            this -> model = model;
+            this -> max_speed = max_speed;
+            this -> price = price;
         }
 
         string get_name(){
-            return this->name;
+            return this -> name;
+        }
+
+        string get_model(){
+            return this -> model;
         }
 };
 
 int main(){
-    Car car1 = Car();
+    Car car1 = Car("Audi", "BX100", 150, 13098.50);
 
-    car1.set_name("Audi");
-
-    cout << car1.get_name();
+    cout << car1.get_name() << endl;
+    cout << car1.get_model() << endl;
 
     return 0;
 }
