@@ -1,0 +1,16 @@
+# ignore all files
+*
+
+# do not ignore directories
+!*/
+
+# do not ignore the c files
+!*.c
+
+# do not ignore cpp files
+!*.cpp
+# ignore the test.cpp file
+test.cpp
+
+# do not ignore .gitignore file
+!.gitignore
